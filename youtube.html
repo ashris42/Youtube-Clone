@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <button class="hamburger">
+          <img class="hamburger-menu" src=icons/hamburger-menu.svg>
+        </button>
+        <img id="youtube-image" class="youtube-logo" src=icons/youtube-logo.svg>
+      </div>
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+          <div class="tooltip">Youtube apps</div>
+        </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="tooltip">Notifications</div>
+
+          <div class="notifications-count">3</div>
+        </div>
+        <img
+          class="current-user-picture"
+          src="channel-images/channel-main.jpg"
+        />
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" />
+        <div>Library</div>
+      </div>
+    </div>
+
+    <div class="video-grid">
+      <div
+        class="video-preview"
+        onclick="window.open('https://www.youtube.com/watch?v=1U3rufQv4Cs&pp=ygUadGhlIG1vc3QgaWxsZWdhbCBzdWJyZWRkaXI%3D','_blank')"
+      >
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-1.webp" />
+          <div class="video-time">19:45</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-images/channel-1.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">The Most Illegal Subreddit</p>
+            <p class="video-author">Dantavius</p>
+            <p class="video-stats">1.1M views &#183; 11 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="video-preview"
+        onclick="window.open('https://www.youtube.com/watch?v=BpEqDEllyM0&t=1s&pp=ygUed2F0Y2hpbmcgcGVvcGxlIHJlYWN0IHRvIG1lIHhk','_blank')"
+      >
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-2.webp" />
+          <div class="video-time">15:22</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-images/channel-2.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Watching people react to me xD</p>
+            <p class="video-author">Dlow Beatbox</p>
+            <p class="video-stats">277K views &#183; 8 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="video-preview"
+        onclick="window.open('https://www.youtube.com/watch?v=fvUy9AIVJQs&pp=ygUPaXRzIGp1c3QgYSBnYW13','_blank')"
+      >
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+          <div class="video-time">5:11</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-images/channel-3.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Its's Just a Game</p>
+            <p class="video-author">Innocent</p>
+            <p class="video-stats">7.7M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="video-preview"
+        onclick="window.open('https://www.youtube.com/watch?v=EO9_qba2CEY&pp=ygUVYnJleiBzaG93YWNhc2UgZ2VybWFu','_blank')"
+      >
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-4.webp" />
+          <div class="video-time">18:36</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-images/channel-4.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              BREZ SHOWCASE | West German Beatbox Championship 2022
+            </p>
+            <p class="video-author">Beatbox Germany</p>
+            <p class="video-stats">187K views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="video-preview"
+        onclick="window.open('https://www.youtube.com/watch?v=ho8fvPH_Ro0&pp=ygUaaG93IGkgYnVpbHQgbXVzY2xlIGF0IGhvbWU%3D','_blank')"
+      >
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-5.webp" />
+          <div class="video-time">8:07</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-images/channel-5.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              How I Built Muscle At Home(Without Weights)
+            </p>
+            <p class="video-author">Colin Murray</p>
+            <p class="video-stats">186K views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="video-preview"
+        onclick="window.open('https://www.youtube.com/watch?v=N8VaYti1-Bo&pp=ygULbW9uc3RlciAyLjE%3D','_blank')"
+      >
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-6.webp" />
+          <div class="video-time">5:45</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-images/channel-6.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              SyJo | (!st place) Gbb23: World League Producer Wildcard|
+            </p>
+            <p class="video-author">SyJo Beatbox</p>
+            <p class="video-stats">203K views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="video-preview"
+        onclick="window.open('https://www.youtube.com/watch?v=GnliWHcEDtw','_blank')"
+      >
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-7.webp" />
+          <div class="video-time">21:23</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-images/channel-7.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">The Worst Crimes In Reddit History</p>
+            <p class="video-author">Moon Crime</p>
+            <p class="video-stats">1.4M &#183; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="video-preview"
+        onclick="window.open('https://www.youtube.com/watch?v=mFieAD-HygM&pp=ygUMa2FvcyBraWxsYm90','_blank')"
+      >
+        <div class="thumbnail-row">
+          <img class="thumbnail" src="thumbnails/thumbnail-8.webp" />
+          <div class="video-time">4:59</div>
+        </div>
+
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="channel-images/channel-8.jpg" />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Kaos | (2nd Place) GBB23: World League Producer Wildcard | Killbot
+            </p>
+            <p class="video-author">Kaos Music</p>
+            <p class="video-stats">139K views &#183; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
