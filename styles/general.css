@@ -10,3 +10,32 @@ p {
     padding-right:24px;
     background-color:rgb(248,248,248);
   }
+/* Media query for screens with a maximum width of 768px (typical tablets) */
+@media only screen and (max-width: 768px) {
+  /* Styles for tablets and smaller screens */
+}
+
+/* Media query for screens with a maximum width of 576px (typical smartphones) */
+@media only screen and (max-width: 576px) {
+  /* Styles for smartphones and smaller screens */
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Example: Increase font size for better readability on smaller screens */
+  }
+
+  .header {
+    display: none; /* Example: Hide the header on smaller screens to save space */
+  }
+}
+
+/* Styles for smartphones and smaller screens */
+@media only screen and (max-width: 576px) {
+  body {
+    font-size: 14px; /* Example: Further increase font size for smartphones */
+  }
+
+  .sidebar {
+    display: none; /* Example: Hide the sidebar on smartphones to focus on main content */
+  }
+}
